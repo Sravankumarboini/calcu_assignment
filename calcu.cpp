@@ -72,6 +72,7 @@ void calculator() {
     
     case 1:
     cout << "Square Root of " << a << ": " << square_root(a) << endl;
+        break;
     case 3:
     cout<<"GCD of the "<<a<<"and"<<b<<"is:"<<gcd(a,b)<<endl;
     break;
