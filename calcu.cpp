@@ -45,6 +45,8 @@ void calculator() {
     cin>>option;
     switch (option)
     {
+    case 3: cout<<"Factorial of the "<<a<<"is:"<<factorial(a)<<endl;
+        break;
     case 4:
         cout<<"LCM of the"<<a<<"and"<<"b"<<"is:"<<lcm(a,b)<<endl;
         break;
