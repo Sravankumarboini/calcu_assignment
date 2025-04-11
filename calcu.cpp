@@ -18,7 +18,10 @@ int factorial(double a);
 //swadeep
 int gcd(double a, double b);
 //harsha
-int lcm(double a, double b);
+int lcm(double a, double b){
+    // lcm(a,b)=(a*b)/gcd(a,b);
+    return (a*b)/gcd(a,b);
+}
 
 void calculator() {
     cout << "\nWelcome to the Team Calculator!" << endl;
