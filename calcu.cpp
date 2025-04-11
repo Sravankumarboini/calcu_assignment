@@ -30,6 +30,21 @@ void calculator() {
     cout << "Values received: a = " << a << ", b = " << b << endl;
 
     // Show results for 4 implemented functions
+    //Work done by harsha
+    cout<<"Calculator Functions"<<endl;
+    cout<<"1.square_root"<<endl<<"2.factorial"<<endl<<"gcd"<<endl<<"4.lcm"<<endl<<"Choose a option"<<endl;
+    int option;
+    cout<<"Enter your option:";
+    cin>>option;
+    switch (option)
+    {
+    case 4:
+        cout<<"LCM of the"<<a<<"and"<<"b"<<"is:"<<lcm(a,b)<<endl;
+        break;
+    
+    default:cout<<"Invalid option";
+        break;
+    }
    
 }
 
