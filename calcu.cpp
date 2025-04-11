@@ -59,7 +59,7 @@ void calculator() {
     double a, b;
     get_input(a, b);
     cout << "Values received: a = " << a << ", b = " << b << endl;
-    cout << "Square Root of " << a << ": " << square_root(a) << endl;
+
 
     // Show results for 4 implemented functions
     //Work done by harsha
@@ -70,7 +70,11 @@ void calculator() {
     cout<<"Enter your option:";
     cin>>option;
     switch (option)
+
     {
+    
+    case 2:
+    cout << "Square Root of " << a << ": " << square_root(a) << endl;
     case 3:
     cout<<"GCD of the "<<a<<"and"<<b<<"is:"<<gcd(a,b)<<endl;
     break;
