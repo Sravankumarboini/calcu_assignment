@@ -47,17 +47,17 @@ void calculator() {
     //Work done by harsha
     //Work done by swadeep
     cout<<"Calculator Functions"<<endl;
-    cout<<"1.square_root"<<endl<<"2.factorial"<<endl<<"gcd"<<endl<<"4.lcm"<<endl<<"Choose a option"<<endl;
+    cout<<"1.square_root"<<endl<<"2.factorial"<<endl<<"3.gcd"<<endl<<"4.lcm"<<endl<<"Choose a option"<<endl;
     int option;
     cout<<"Enter your option:";
     cin>>option;
     switch (option)
     {
     case 3:
-    cout<<"GCD of the"<<a<<"and"<<"b"<<"is:"<<gcd(a,b)<<endl;
+    cout<<"GCD of the "<<a<<"and"<<b<<"is:"<<gcd(a,b)<<endl;
     break;
     case 4:
-        cout<<"LCM of the"<<a<<"and"<<"b"<<"is:"<<lcm(a,b)<<endl;
+        cout<<"LCM of the "<<a<<"and"<<b<<"is:"<<lcm(a,b)<<endl;
         break;
     
     default:cout<<"Invalid option";
