@@ -32,9 +32,6 @@ double square_root(double a) {
 double square_root(double a);
 //shiva 
 int factorial(double a);
-
-int factorial(double a){
-}
 //swadeep
 int gcd(double a, double b) {
     int x = (int)a;
@@ -73,7 +70,7 @@ void calculator() {
 
     {
     
-    case 2:
+    case 1:
     cout << "Square Root of " << a << ": " << square_root(a) << endl;
     case 3:
     cout<<"GCD of the "<<a<<"and"<<b<<"is:"<<gcd(a,b)<<endl;
