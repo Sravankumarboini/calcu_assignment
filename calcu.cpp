@@ -25,7 +25,10 @@ int factorial(double a){
 //swadeep
 int gcd(double a, double b);
 //harsha
-int lcm(double a, double b);
+int lcm(double a, double b){
+    // lcm(a,b)=(a*b)/gcd(a,b);
+    return (a*b)/gcd(a,b);
+}
 
 void calculator() {
     cout << "\nWelcome to the Team Calculator!" << endl;
@@ -34,6 +37,21 @@ void calculator() {
     cout << "Values received: a = " << a << ", b = " << b << endl;
 
     // Show results for 4 implemented functions
+    //Work done by harsha
+    cout<<"Calculator Functions"<<endl;
+    cout<<"1.square_root"<<endl<<"2.factorial"<<endl<<"gcd"<<endl<<"4.lcm"<<endl<<"Choose a option"<<endl;
+    int option;
+    cout<<"Enter your option:";
+    cin>>option;
+    switch (option)
+    {
+    case 4:
+        cout<<"LCM of the"<<a<<"and"<<"b"<<"is:"<<lcm(a,b)<<endl;
+        break;
+    
+    default:cout<<"Invalid option";
+        break;
+    }
    
 }
 
