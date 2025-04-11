@@ -9,6 +9,23 @@ void get_input(double &a, double &b) {
     cin >> b;
 }
 
+
+double square_root(double a) {
+    if (a < 0) {
+        cout << "Error: Square root of a negative number is not defined for real numbers.\n";
+        return -1;
+    }
+
+    double guess = a / 2.0; // Initial guess
+    double epsilon = 0.00001; // Precision threshold
+
+    // Newton-Raphson iteration
+    while (abs(guess * guess - a) > epsilon) {
+        guess = (guess + a / guess) / 2.0;
+    }
+
+    return guess;
+}
 // Function implementations
 //implent without using inbuilt funtions
 //arun implement squareroot function
@@ -25,6 +42,7 @@ void calculator() {
     double a, b;
     get_input(a, b);
     cout << "Values received: a = " << a << ", b = " << b << endl;
+    cout << "Square Root of " << a << ": " << square_root(a) << endl;
 
     // Show results for 4 implemented functions
    
@@ -32,5 +50,6 @@ void calculator() {
 
 int main() {
     calculator();
+    
     return 0;
 }
