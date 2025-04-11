@@ -15,6 +15,13 @@ void get_input(double &a, double &b) {
 double square_root(double a);
 //shiva 
 int factorial(double a);
+
+int factorial(double a){
+    if(a == 0 || a==1){
+        return 1;
+    }
+    return a*factorial(a-1);
+}
 //swadeep
 int gcd(double a, double b);
 //harsha
