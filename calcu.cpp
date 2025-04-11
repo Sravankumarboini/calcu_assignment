@@ -15,8 +15,22 @@ void get_input(double &a, double &b) {
 double square_root(double a);
 //shiva 
 int factorial(double a);
+
+int factorial(double a){
+}
 //swadeep
-int gcd(double a, double b);
+int gcd(double a, double b) {
+    int x = (int)a;
+    int y = (int)b;
+    if (x < 0) x = -x;
+    if (y < 0) y = -y;
+    while (y != 0) {
+        int temp = y;
+        y = x % y;
+        x = temp;
+    }
+    return x;
+}
 //harsha
 int lcm(double a, double b){
     // lcm(a,b)=(a*b)/gcd(a,b);
@@ -31,6 +45,7 @@ void calculator() {
 
     // Show results for 4 implemented functions
     //Work done by harsha
+    //Work done by swadeep
     cout<<"Calculator Functions"<<endl;
     cout<<"1.square_root"<<endl<<"2.factorial"<<endl<<"gcd"<<endl<<"4.lcm"<<endl<<"Choose a option"<<endl;
     int option;
@@ -38,6 +53,9 @@ void calculator() {
     cin>>option;
     switch (option)
     {
+    case 3:
+    cout<<"GCD of the"<<a<<"and"<<"b"<<"is:"<<gcd(a,b)<<endl;
+    break;
     case 4:
         cout<<"LCM of the"<<a<<"and"<<"b"<<"is:"<<lcm(a,b)<<endl;
         break;
