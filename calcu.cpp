@@ -31,7 +31,13 @@ double square_root(double a) {
 //arun implement squareroot function
 double square_root(double a);
 //shiva 
-int factorial(double a);
+int factorial(double a){
+    int fact = 1;
+    for(int i=2; i<=a; i++){
+        fact*=i;
+    }
+    return fact; //did my work...
+}
 //swadeep
 int gcd(double a, double b) {
     int x = (int)a;
@@ -73,6 +79,11 @@ void calculator() {
     case 1:
     cout << "Square Root of " << a << ": " << square_root(a) << endl;
         break;
+
+    case 2:
+        cout << "Factorial of " << a << ": " << factorial(a) << endl;
+        break;
+    
     case 3:
     cout<<"GCD of the "<<a<<"and"<<b<<"is:"<<gcd(a,b)<<endl;
     break;
